@@ -5,7 +5,7 @@
 declare module '@seedcord/gateway' {
     interface SlashRegistry {
         ping: { options: { detailed: { kind: 'boolean'; required: false } }; cache: 'cached' };
-        write_storage: { options: {}; cache: 'cached' };
+        write_storage: { options: { key: { kind: 'string'; required: false }; value: { kind: 'string'; required: false } }; cache: 'cached' };
     }
     interface UserContextMenuRegistry {
 
