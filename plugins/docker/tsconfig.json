@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "types": ["dockerode", "node"],
+        "declaration": true
+    }
+}

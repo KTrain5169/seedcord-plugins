@@ -1,0 +1,31 @@
+{
+  "name": "seedcord-plugin-unstorage",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.5",
+    "@seedcord/core": "^0.8.0",
+    "@types/node": "^26.6.2",
+    "publint": "^0.3.24",
+    "tsdown": "^0.23.0"
+  },
+  "dependencies": {
+    "unstorage": "^1.17.5"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@seedcord/core": "^0.8.0",
+    "unstorage": "^1.17.5"
+  }
+}

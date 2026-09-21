@@ -1,0 +1,38 @@
+{
+    "name": "playground",
+    "type": "module",
+    "version": "0.1.0",
+    "private": true,
+    "engines": {
+        "node": ">=24.11"
+    },
+    "scripts": {
+        "dev": "seedcord dev",
+        "build": "seedcord build",
+        "start": "node --enable-source-maps dist/index.mjs",
+        "codegen": "seedcord codegen",
+        "lint": "eslint 'src/**/*.ts' --cache",
+        "lint:fix": "eslint 'src/**/*.ts' --fix --cache",
+        "fmt": "prettier --write 'src/**/*.{ts,json,md}' --cache",
+        "fmt:check": "prettier --check 'src/**/*.{ts,json,md}' --cache",
+        "tc": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@discordjs/builders": "^1.14.1",
+        "@seedcord/gateway": "^0.6.1",
+        "discord.js": "^14.27.0",
+        "envapt": "^8.2.1"
+    },
+    "devDependencies": {
+        "@seedcord/eslint-config": "^2.2.1",
+        "@seedcord/tsconfig": "^2.0.3",
+        "@types/node": "^26.6.2",
+        "jiti": "^2.7.0",
+        "prettier": "^3.9.8",
+        "seedcord": "^0.20.0",
+        "seedcord-plugin-db0": "workspace:^",
+        "seedcord-plugin-docker": "workspace:^",
+        "seedcord-plugin-unstorage": "workspace:^",
+        "typescript": "~6.0"
+    }
+}

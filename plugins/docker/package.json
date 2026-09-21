@@ -1,0 +1,31 @@
+{
+  "name": "seedcord-plugin-docker",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "peerDependencies": {
+    "@seedcord/core": "^0.8.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.5",
+    "@seedcord/core": "^0.8.0",
+    "@types/node": "^26.6.2",
+    "publint": "^0.3.24",
+    "tsdown": "^0.23.0"
+  },
+  "dependencies": {
+    "@types/dockerode": "^4.0.1",
+    "dockerode": "^5.0.1"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  }
+}
