@@ -4,6 +4,8 @@ import { Seedcord } from '@seedcord/gateway';
 import { GatewayIntentBits, Partials } from 'discord.js';
 import { Envapter } from 'envapt';
 
+import { UnstorageClass } from 'seedcord-plugin-unstorage'
+
 Envapter.baseDir = resolve(import.meta.dirname, '..');
 
 export const seedcord = new Seedcord({
@@ -36,6 +38,6 @@ export const seedcord = new Seedcord({
     notifications: {
         developerUsername: 'KTrain5369'
     }
-});
+}).attach('storage', UnstorageClass);
 
 export default seedcord;
