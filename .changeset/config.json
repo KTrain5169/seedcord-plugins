@@ -10,7 +10,7 @@
     }
   ],
   "commit": false,
-  "ignore": [],
+  "ignore": ["seedcord-plugin-docker"],
   "fixed": [],
   "linked": [],
   "updateInternalDependencies": "patch"
