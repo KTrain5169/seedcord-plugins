@@ -8,8 +8,7 @@
     },
     "scripts": {
         "dev": "seedcord dev",
-        "build": "seedcord build",
-        "prebuild": "pnpm run codegen",
+        "build": "pnpm run codegen && seedcord build",
         "start": "node --enable-source-maps dist/index.mjs",
         "codegen": "seedcord codegen",
         "lint": "eslint 'src/**/*.ts' --cache",
