@@ -2,11 +2,6 @@
   "name": "seedcord-plugins",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
