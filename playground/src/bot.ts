@@ -38,6 +38,6 @@ export const seedcord = new Seedcord({
     notifications: {
         developerUsername: 'KTrain5369'
     }
-}).attach('storage', UnstorageClass);
+}).attach('storage', UnstorageClass<string>);
 
 export default seedcord;
