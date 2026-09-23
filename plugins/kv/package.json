@@ -6,8 +6,13 @@
     "build": "tsdown",
     "dev": "tsdown --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KTrain5169/seedcord-plugins",
+    "directory": "plugins/kv"
+  },
   "keywords": [],
-  "author": "",
+  "author": "KTrain5369",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
