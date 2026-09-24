@@ -11,18 +11,20 @@
     "url": "git+https://github.com/KTrain5169/seedcord-plugins",
     "directory": "plugins/db"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "KTrain5369",
   "license": "MIT",
   "type": "module",
   "peerDependencies": {
-    "@seedcord/core": "^0.8.0",
+    "@seedcord/core": "^0.9.0",
     "db0": "^0.4.1"
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "@seedcord/core": "^0.8.0",
+    "@seedcord/core": "^0.9.0",
     "@types/node": "^26.6.2",
     "db0": "^0.4.1",
     "publint": "^0.3.24",

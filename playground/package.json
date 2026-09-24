@@ -19,17 +19,17 @@
     },
     "dependencies": {
         "@discordjs/builders": "^1.14.1",
-        "@seedcord/gateway": "^0.6.1",
+        "@seedcord/gateway": "^0.7.0",
         "discord.js": "^14.27.0",
-        "envapt": "^8.2.1"
+        "envapt": "^8.2.3"
     },
     "devDependencies": {
         "@seedcord/eslint-config": "^2.2.1",
         "@seedcord/tsconfig": "^2.0.3",
         "@types/node": "^26.6.2",
         "jiti": "^2.7.0",
-        "prettier": "^3.9.8",
-        "seedcord": "^0.20.0",
+        "prettier": "^3.9.9",
+        "seedcord": "^0.21.0",
         "seedcord-plugin-db0": "workspace:^",
         "seedcord-plugin-docker": "workspace:^",
         "seedcord-plugin-unstorage": "workspace:^",

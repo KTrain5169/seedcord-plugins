@@ -11,14 +11,16 @@
     "url": "git+https://github.com/KTrain5169/seedcord-plugins",
     "directory": "plugins/kv"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "keywords": [],
   "author": "KTrain5369",
   "license": "MIT",
   "type": "module",
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "@seedcord/core": "^0.8.0",
+    "@seedcord/core": "^0.9.0",
     "@types/node": "^26.6.2",
     "publint": "^0.3.24",
     "tsdown": "^0.23.0"
@@ -31,7 +33,7 @@
     "./package.json": "./package.json"
   },
   "peerDependencies": {
-    "@seedcord/core": "^0.8.0",
+    "@seedcord/core": "^0.9.0",
     "unstorage": "^1.17.5"
   }
 }
