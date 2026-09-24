@@ -3,7 +3,7 @@ import { CoreBase } from '@seedcord/core'
 import { Plugin } from '@seedcord/core/plugin'
 
 export class UnstorageClass<const TValueType extends StorageValue> extends Plugin {
-    storage?: Storage<TValueType>
+    private storage?: Storage<TValueType>
     constructor(host: CoreBase, private readonly driver?: Driver) {
         super(host)
     }

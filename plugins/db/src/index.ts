@@ -3,7 +3,7 @@ import { CoreBase } from '@seedcord/core'
 import { Connector, createDatabase, Database } from 'db0'
 
 export class DB0Plugin<const TConnector extends Connector> extends Plugin {
-    db: Database<TConnector>
+    private db: Database<TConnector>
     constructor(host: CoreBase, private readonly dbConnector: TConnector) {
         super(host)
 
