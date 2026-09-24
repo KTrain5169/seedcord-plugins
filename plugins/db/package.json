@@ -11,6 +11,7 @@
     "url": "git+https://github.com/KTrain5169/seedcord-plugins",
     "directory": "plugins/db"
   },
+  "files": ["dist"],
   "keywords": [],
   "author": "KTrain5369",
   "license": "MIT",
