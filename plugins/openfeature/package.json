@@ -1,17 +1,16 @@
 {
-  "name": "tsdown-starter",
+  "name": "seedcord-plugin-openfeature",
   "type": "module",
   "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
-  "author": "Author Name <author.name@mail.com>",
+  "description": "More direct OpenFeature support in seedcord",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git+https://github.com/KTrain5169/seedcord-plugins.git",
+    "directory": "plugins/openfeature"
   },
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/KTrain5169/seedcord-plugins/issues"
   },
   "exports": {
     ".": "./dist/index.mjs",
