@@ -18,6 +18,10 @@ export class OpenFeatureFlags extends Plugin {
     OpenFeature.setLogger(this.logger)
   }
 
+  getClient() {
+    return this.ofeat!
+  }
+
   async dispose(): Promise<void> {
     await OpenFeature.close()
   }
