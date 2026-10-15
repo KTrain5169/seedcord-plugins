@@ -1,0 +1,29 @@
+{
+  "name": "tsdown-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple example library built by tsdown",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "devDependencies": {
+    "@seedcord/core": "^0.10.0",
+    "tsdown": "^0.22.5",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "@seedcord/core": "^0.10.0"
+  },
+  "dependencies": {
+    "@standard-schema/spec": "^1.1.0"
+  }
+}
