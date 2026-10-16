@@ -7,7 +7,7 @@ import { Plugin } from "@seedcord/core/plugin";
 import { chat, decide, generateImage, summarize, toolDefinition } from "@tanstack/ai";
 
 export class AI extends Plugin {
-  constructor(host: CoreBase, private readonly options?: {}) {
+  constructor(host: CoreBase) {
     super(host)
   }
 
@@ -21,6 +21,24 @@ export class AI extends Plugin {
 
   createTool = toolDefinition
 
-  // Sessions abstraction layer
-  sessions = {}
+  llm = {
+    // Sessions abstraction layer
+    create(name: string, opts: SessionOptions): AISession {
+        return new AISession(name, opts)
+    }
+  }
+}
+
+interface SessionOptions {
+    tokenLimit: number
+}
+
+class AISession {
+    readonly name: string
+    readonly tokenLimit: number
+    private readonly messages = []
+    constructor(name: string, opts: SessionOptions) {
+        this.name = name
+        this.tokenLimit = opts.tokenLimit
+    }
 }
