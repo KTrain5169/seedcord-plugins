@@ -16,6 +16,6 @@ export class Collections<const TConfig extends Config> extends Plugin<{ runtime:
   async init(): Promise<void> {}
 
   async listCollections() {}
-  async listItems<const T extends string>(collection: T) {}
-  async viewItem<const T extends string>(collection: T, item: string) {}
+  async listItems<const T extends keyof TConfig["collections"]>(collection: T) {}
+  async viewItem<const T extends keyof TConfig["collections"]>(collection: T, item: string) {}
 }
