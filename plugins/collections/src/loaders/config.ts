@@ -1,0 +1,19 @@
+import type { StandardSchemaV1, StandardJSONSchemaV1 } from "@standard-schema/spec";
+
+type StandardCombinedV1 = StandardSchemaV1 & StandardJSONSchemaV1;
+
+type SchemaOptions =
+  | {
+      schema: StandardSchemaV1;
+      generateJsonSchema?: false;
+    }
+  | {
+      schema: StandardCombinedV1;
+      generateJsonSchema: true;
+      outDir: string;
+    };
+
+export type LoaderOptions = SchemaOptions & {
+  loader: (item: string) => unknown;
+  type: "live"; // build coming soon?
+};

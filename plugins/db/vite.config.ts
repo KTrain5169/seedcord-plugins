@@ -1,6 +1,8 @@
-import { defineConfig } from 'tsdown/config'
+import { defineConfig } from "vite-plus";
 
 export default defineConfig({
+  pack: {
     exports: true,
     attw: true,
-})
+  },
+});

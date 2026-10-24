@@ -2,10 +2,9 @@
   "name": "seedcord-plugin-db0",
   "version": "1.2.0",
   "description": "",
-  "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch"
-  },
+  "keywords": [],
+  "license": "MIT",
+  "author": "KTrain5369",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KTrain5169/seedcord-plugins",
@@ -14,13 +13,14 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "KTrain5369",
-  "license": "MIT",
   "type": "module",
-  "peerDependencies": {
-    "@seedcord/core": "^0.9.0",
-    "db0": "^0.4.1"
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch"
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
@@ -28,10 +28,10 @@
     "@types/node": "^26.6.2",
     "db0": "^0.4.1",
     "publint": "^0.3.24",
-    "tsdown": "^0.23.0"
+    "vite-plus": "catalog:"
   },
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
+  "peerDependencies": {
+    "@seedcord/core": "^0.9.0",
+    "db0": "^0.4.1"
   }
 }

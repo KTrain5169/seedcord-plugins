@@ -2,30 +2,30 @@
   "name": "seedcord-plugin-docker",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "build": "tsdown",
-    "dev": "tsdown --watch"
-  },
   "keywords": [],
-  "author": "",
   "license": "MIT",
+  "author": "",
   "type": "module",
-  "peerDependencies": {
-    "@seedcord/core": "^0.9.0"
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch"
+  },
+  "dependencies": {
+    "@types/dockerode": "^4.0.1",
+    "dockerode": "^5.0.1"
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
     "@seedcord/core": "^0.9.0",
     "@types/node": "^26.6.2",
     "publint": "^0.3.24",
-    "tsdown": "^0.23.0"
+    "vite-plus": "catalog:"
   },
-  "dependencies": {
-    "@types/dockerode": "^4.0.1",
-    "dockerode": "^5.0.1"
-  },
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
+  "peerDependencies": {
+    "@seedcord/core": "^0.9.0"
   }
 }

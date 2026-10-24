@@ -1,10 +1,20 @@
 packages:
-- packages/*
-- plugins/*
-- playground
+  - packages/*
+  - plugins/*
+  - playground
 allowBuilds:
   cpu-features: false
   esbuild: false
   protobufjs: false
   ssh2: false
   unrs-resolver: false
+catalog:
+  vite: npm:@voidzero-dev/vite-plus-core@1.4.0
+  vite-plus: 1.4.0
+overrides:
+  vite@*: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+  allowedVersions:
+    vite: "*"

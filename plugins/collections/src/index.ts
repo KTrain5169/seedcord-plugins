@@ -1,26 +1,17 @@
-export function fn() {
-  return 'Hello, tsdown!'
-}
-
-import { CoreBase } from "@seedcord/core"
-import { Plugin } from "@seedcord/core/plugin"
-import { StandardSchemaV1 } from "@standard-schema/spec"
+import { CoreBase } from "@seedcord/core";
+import { Plugin } from "@seedcord/core/plugin";
+import { LoaderOptions } from "./loaders/config";
 
 interface Config {
-  type: 'live' | 'build'
-  schema?: StandardSchemaV1
-  collector: Collector
+  collections: Record<string, LoaderOptions>;
 }
 
-interface Collector {
-  name: string
-  load(ctx: {}): Promise<void>
-  createSchema(): Promise<{ schema: StandardSchemaV1, types: string }>
-}
-
-export class Collections<const TConfig extends Record<string, Config>> extends Plugin {
-  constructor(host: CoreBase, private readonly cfg: TConfig) {
-    super(host)
+export class Collections<const TConfig extends Config> extends Plugin<{ runtime: "server" }> {
+  constructor(
+    host: CoreBase,
+    private readonly cfg: TConfig,
+  ) {
+    super(host);
   }
   async init(): Promise<void> {}
 

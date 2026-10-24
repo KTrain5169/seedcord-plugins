@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
+  "type": "module",
+  "scripts": {
+    "prepare": "vp config"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
+    "vite-plus": "catalog:"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.5.1",
+      "version": "12.15.0",
       "onFail": "download"
     },
     "runtime": {
@@ -16,11 +25,5 @@
       "version": "26.10.0",
       "onFail": "download"
     }
-  },
-  "packageManager": "pnpm@12.5.1",
-  "type": "module",
-  "devDependencies": {
-    "@changesets/changelog-github": "^1.0.1",
-    "@changesets/cli": "^3.0.3"
   }
 }
