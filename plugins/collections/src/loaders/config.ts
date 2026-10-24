@@ -15,5 +15,6 @@ type SchemaOptions =
 
 export type LoaderOptions = SchemaOptions & {
   loader: (item: string) => unknown;
+  generateIds: () => string[];
   type: "live"; // build coming soon?
 };
