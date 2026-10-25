@@ -8,16 +8,16 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.5.1",
+      "version": "12.15.0",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "26.10.0",
+      "version": "26.12.1",
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.5.1",
+  "packageManager": "pnpm@12.15.0",
   "type": "module",
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",

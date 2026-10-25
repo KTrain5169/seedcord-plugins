@@ -3,13 +3,6 @@
     "type": "module",
     "version": "0.1.0",
     "private": true,
-    "devEngines": {
-        "runtime": {
-            "name": "node",
-            "onFail": "warn",
-            "version": "^24.22.1"
-        }
-    },
     "scripts": {
         "dev": "seedcord dev",
         "build": "pnpm run codegen && seedcord build",
