@@ -17,3 +17,11 @@ minimumReleaseAgeExclude:
   - '@seedcord/types@0.15.0'
   - '@seedcord/utils@0.9.0'
   - envapt@9.2.0
+  - '@seedcord/eslint-config@3.0.0'
+  - '@seedcord/eslint-plugin@0.5.0'
+  - '@seedcord/gateway@0.8.0'
+  - '@seedcord/rate-limiter@0.2.0'
+  - '@seedcord/tsconfig@3.0.0'
+  - es-toolkit@1.53.0
+  - eslint-plugin-discordjs@0.2.0
+  - seedcord@0.22.0
