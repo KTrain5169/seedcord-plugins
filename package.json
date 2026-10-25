@@ -17,7 +17,6 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.15.0",
   "type": "module",
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.1",
