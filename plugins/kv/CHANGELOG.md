@@ -1,5 +1,17 @@
 # seedcord-plugin-unstorage
 
+## 1.3.0
+
+### Minor Changes
+
+- [`fc83a65`](https://github.com/KTrain5169/seedcord-plugins/commit/fc83a65abf5f6de77198cc11f9a52c264b9cb0dd) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Bump supported seedcord versions
+
+### Patch Changes
+
+- [`a518045`](https://github.com/KTrain5169/seedcord-plugins/commit/a5180451b61451c2bd1d5143396728fb4001b414) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Make storage and db variables private
+
+- [`33f9b47`](https://github.com/KTrain5169/seedcord-plugins/commit/33f9b47daba8c00ddc0eb97c8c281e48e4730ca0) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Make UnstorageClass create the storage in init() hook instead, a bit annoying but oh well
+
 ## 1.2.0
 
 ### Minor Changes
