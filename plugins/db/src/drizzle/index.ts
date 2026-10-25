@@ -22,6 +22,10 @@ export class DB0Plugin<const TConnector extends Connector, const TRelations exte
         return this.orm!
     }
 
+    getRawDatabase() {
+        return this.db!
+    }
+
     override async dispose(): Promise<void> {
         await this.orm?.$client.dispose()
     }

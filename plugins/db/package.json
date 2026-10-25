@@ -45,6 +45,8 @@
   },
   "exports": {
     ".": "./dist/index.mjs",
+    "./drizzle": "./dist/drizzle/index.mjs",
+    "./kysely": "./dist/kysely/index.mjs",
     "./package.json": "./package.json"
   }
 }
