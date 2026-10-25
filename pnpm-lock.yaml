@@ -228,8 +228,8 @@ importers:
         specifier: ^0.18.5
         version: 0.18.5
       '@seedcord/core':
-        specifier: ^0.9.0
-        version: 0.9.0(envapt@8.2.3)(typescript@6.0.3)
+        specifier: ^0.11.0
+        version: 0.11.0(envapt@9.2.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^26.6.2
         version: 26.6.2
@@ -278,8 +278,8 @@ importers:
         specifier: ^0.18.5
         version: 0.18.5
       '@seedcord/core':
-        specifier: ^0.9.0
-        version: 0.9.0(envapt@8.2.3)(typescript@6.0.3)
+        specifier: ^0.11.0
+        version: 0.11.0(envapt@9.2.0)(typescript@6.0.3)
       '@types/node':
         specifier: ^26.6.2
         version: 26.6.2
@@ -717,6 +717,13 @@ packages:
     resolution: {integrity: sha512-xzvBr1Q1c4lCe7i6sRnrofxeO1QTP/LKQ6A6qy0iB4x5yfiSfARMEQEghojzTNALDTcv8En04qYNIco9/K9eZQ==}
     engines: {node: '>=v14.0.0', npm: '>=7.0.0'}
 
+  '@seedcord/core@0.11.0':
+    resolution: {integrity: sha512-TIxfj6SVQ43sYKSCXxCuZBPJtIM9bCfAv8frcUPh5XgLkEzJmn2nh9noPTAXi+WjOaFMRsCE1giTJUwmR20nkA==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      envapt: ^9.2.0
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
+
   '@seedcord/core@0.9.0':
     resolution: {integrity: sha512-X991kBA9sNpgQ+nzLYI5M7fKd/AC2H6an9jT5+Hy5RiP3YWjOxuLW/jWzJrbhqBuPZzUnMddvhgleXsHD6mhfA==}
     engines: {node: '>=24.11'}
@@ -730,11 +737,23 @@ packages:
     peerDependencies:
       typescript: ^6.0.3
 
+  '@seedcord/custom-id@0.3.0':
+    resolution: {integrity: sha512-oqqGAIoKbe7BpVKHj/5zUa9Ye7+TfJD3UNFnNqFLVY/ZHtpNxUQUvBmZu9pYbLBB/V0v0JPg8yZjF1rnMfH8/g==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
+
   '@seedcord/errors@0.10.0':
     resolution: {integrity: sha512-/EJL9zflwFo4jJvwwNRQOn2o1YmI0E308mXcS6e71pRxFcu9a5iANwmbxCGFodrZBHuAFNfeMx1ChJTbynqB7A==}
     engines: {node: '>=24.11'}
     peerDependencies:
       typescript: ^6.0.3
+
+  '@seedcord/errors@0.14.0':
+    resolution: {integrity: sha512-T/33jqkatwFe/sHo/YbAiqL87lLH3DlB90LtYLx918lmYgVeWhRROX97/90PknLElZ8vCrtZ0IrCYtjlGlHfLQ==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
 
   '@seedcord/eslint-config@2.2.1':
     resolution: {integrity: sha512-IgfS2aGr2LOyLNUhUqDSekiK3ZZ2kuCntmVoYVvkYSOzZDgSrwWV5RQ73FZqYD7foeaxQHn5LpPk+xq984zEhg==}
@@ -772,6 +791,12 @@ packages:
     peerDependencies:
       typescript: ^6.0.3
 
+  '@seedcord/event-emitter@0.2.0':
+    resolution: {integrity: sha512-JrMw4u2rYN1hqR9KysBGdOaf2tGLvQWgNWGecERA+Bm4cRkcAqYYWkzE4TRCPyPFcyGe1B+EPqa+DCwtN7NQgw==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
+
   '@seedcord/gateway@0.7.0':
     resolution: {integrity: sha512-72aDqKUoiGllJFSG2LR7+cadw77NvHV4TBzYLlPo5D8M+X32CMe/bc7+YIVqV8voHQhrL6CQKLkR8KkeQzc/Uw==}
     engines: {node: '>=24.11'}
@@ -786,6 +811,13 @@ packages:
     peerDependencies:
       envapt: ^8.2.2
       typescript: ^6.0.3
+
+  '@seedcord/logger@0.5.0':
+    resolution: {integrity: sha512-uvrSur87ijRFgBZFlL72kgUDdLU25Voy75/l53/WNwIGRnGD4+KY9G7+6kVomPJra/XUq6IyFd7pIo1c7K4cyQ==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      envapt: ^9.2.0
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
 
   '@seedcord/rate-limiter@0.1.9':
     resolution: {integrity: sha512-MYEFaqE8uHNN+AhmUHOeETEs4NqSdxu/b4AhwxYQjtu/u6gOsPVpTCUSrRKbQ7Ck9oH3BpPXgm9NR17hohyFGg==}
@@ -803,11 +835,23 @@ packages:
     peerDependencies:
       typescript: ^6.0.3
 
+  '@seedcord/types@0.15.0':
+    resolution: {integrity: sha512-/awgV60F3kpfQ1wesHBumlF5bXkddKErdJNh0xXEHNL0YF8RBGrZHaIgNyOjmvoRMA9O+XpwIq85pZAGJ45m3A==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
+
   '@seedcord/utils@0.8.13':
     resolution: {integrity: sha512-IZ+9gzWVprOtILfWqd2q3vCMH2RyCa+jA+zFYgWO74PSS4h56cbmdqKRTHjwDr3gcxSJWzPIu9ElhYudACtiKQ==}
     engines: {node: '>=24.11'}
     peerDependencies:
       typescript: ^6.0.3
+
+  '@seedcord/utils@0.9.0':
+    resolution: {integrity: sha512-ktHLBckks5r2jTqgHW9n2KWw0PdHfR/cqDaiVrR7pv1jgXXbDqY1vtO5iZNFAHQSh3XAW/q5OiDTWROvM7RURA==}
+    engines: {bun: '>=1.4.2', node: ^24.22.1 || >=26.12.1}
+    peerDependencies:
+      typescript: ^5.9.3 || ^6.0.0 || ^7.0.0
 
   '@so-ric/colorspace@1.1.6':
     resolution: {integrity: sha512-/KiKkpHNOBgkFJwu9sh48LkHSMYGyuTcSFK/qMBdnOAlrRJzRSXAOFB5qwzaVQuDl8wAvHVMkaASQDReTahxuw==}
@@ -1513,6 +1557,10 @@ packages:
   envapt@8.2.3:
     resolution: {integrity: sha512-4f+9QGwlMvPJxjmSiCHM0NEnQxJalaocObzLkFodGBHZOhBaHXriIb6ukWA6J9/OeFfaxJDbwqRDGvK34IWd9g==}
     engines: {bun: '>=1.3.11', deno: '>=2.5.0', node: '>=20.0.0'}
+
+  envapt@9.2.0:
+    resolution: {integrity: sha512-5fwl7dKviaNlWLAVGsylCbX0lUErE496k2GIrlm0QOYDGB/DHVeLmL+ntG4pQ7W+rLadzwkrri3FROduf9ssew==}
+    engines: {bun: '>=1.3.11', deno: '>=2.5.0', node: '>=22.23.3'}
 
   environment@1.1.0:
     resolution: {integrity: sha512-xUtoPkMggbz0MPyPiIWr1Kp4aeWJjDZ6SMvURhimjdZgsRuDplF5/s9hcgGhyXMhs+6vpnuoiZ2kFiu3FMnS8Q==}
@@ -2807,6 +2855,10 @@ packages:
     resolution: {integrity: sha512-mMVzj0TXExtVdlDEq+Mzp0eyOuyznNpFobNM3uAqe3HVm/Ps2c+u17BligMkZjZCA6EiXpoon8iRTer3iu40SQ==}
     engines: {node: '>=18.12.0'}
 
+  verkit@0.5.0:
+    resolution: {integrity: sha512-u4J1hr6Y+C/hit34GwL3eIcUf3wngT8TlYUjK7tk0jxydKLAq3sYvifjdTDA6U3KCKRcQCQDGf/srjxfZF3l7g==}
+    engines: {node: '>=18.12.0'}
+
   vite-tsconfig-paths@6.1.1:
     resolution: {integrity: sha512-2cihq7zliibCCZ8P9cKJrQBkfgdvcFkOOc3Y02o3GWUDLgqjWsZudaoiuOwO/gzTzy17cS5F7ZPo4bsnS4DGkg==}
     peerDependencies:
@@ -3390,6 +3442,22 @@ snapshots:
 
   '@sapphire/snowflake@3.5.5': {}
 
+  '@seedcord/core@0.11.0(envapt@9.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@discordjs/builders': 1.14.1
+      '@discordjs/rest': 2.6.3
+      '@seedcord/custom-id': 0.3.0(typescript@6.0.3)
+      '@seedcord/errors': 0.14.0(typescript@6.0.3)
+      '@seedcord/event-emitter': 0.2.0(typescript@6.0.3)
+      '@seedcord/logger': 0.5.0(envapt@9.2.0)(typescript@6.0.3)
+      '@seedcord/types': 0.15.0(typescript@6.0.3)
+      '@seedcord/utils': 0.9.0(typescript@6.0.3)
+      discord-api-types: 0.38.55
+      envapt: 9.2.0
+      reflect-metadata: 0.2.2
+      typescript: 6.0.3
+      verkit: 0.5.0
+
   '@seedcord/core@0.9.0(envapt@8.2.3)(typescript@6.0.3)':
     dependencies:
       '@discordjs/builders': 1.14.1
@@ -3411,7 +3479,18 @@ snapshots:
       discord-api-types: 0.38.55
       typescript: 6.0.3
 
+  '@seedcord/custom-id@0.3.0(typescript@6.0.3)':
+    dependencies:
+      '@seedcord/errors': 0.14.0(typescript@6.0.3)
+      discord-api-types: 0.38.55
+      typescript: 6.0.3
+
   '@seedcord/errors@0.10.0(typescript@6.0.3)':
+    dependencies:
+      chalk: 6.0.0
+      typescript: 6.0.3
+
+  '@seedcord/errors@0.14.0(typescript@6.0.3)':
     dependencies:
       chalk: 6.0.0
       typescript: 6.0.3
@@ -3452,6 +3531,10 @@ snapshots:
     dependencies:
       typescript: 6.0.3
 
+  '@seedcord/event-emitter@0.2.0(typescript@6.0.3)':
+    dependencies:
+      typescript: 6.0.3
+
   '@seedcord/gateway@0.7.0(discord.js@14.27.0)(envapt@8.2.3)(typescript@6.0.3)':
     dependencies:
       '@discordjs/builders': 1.14.1
@@ -3479,6 +3562,16 @@ snapshots:
       typescript: 6.0.3
       winston: 3.19.0
 
+  '@seedcord/logger@0.5.0(envapt@9.2.0)(typescript@6.0.3)':
+    dependencies:
+      '@seedcord/errors': 0.14.0(typescript@6.0.3)
+      '@seedcord/types': 0.15.0(typescript@6.0.3)
+      '@seedcord/utils': 0.9.0(typescript@6.0.3)
+      chalk: 6.0.0
+      envapt: 9.2.0
+      typescript: 6.0.3
+      winston: 3.19.0
+
   '@seedcord/rate-limiter@0.1.9(typescript@6.0.3)':
     dependencies:
       '@seedcord/types': 0.14.0(typescript@6.0.3)
@@ -3491,10 +3584,24 @@ snapshots:
       discord-api-types: 0.38.55
       typescript: 6.0.3
 
+  '@seedcord/types@0.15.0(typescript@6.0.3)':
+    dependencies:
+      '@discordjs/rest': 2.6.3
+      discord-api-types: 0.38.55
+      typescript: 6.0.3
+
   '@seedcord/utils@0.8.13(typescript@6.0.3)':
     dependencies:
       '@seedcord/errors': 0.10.0(typescript@6.0.3)
       '@seedcord/types': 0.14.0(typescript@6.0.3)
+      discord-api-types: 0.38.55
+      strip-ansi: 7.2.0
+      typescript: 6.0.3
+
+  '@seedcord/utils@0.9.0(typescript@6.0.3)':
+    dependencies:
+      '@seedcord/errors': 0.14.0(typescript@6.0.3)
+      '@seedcord/types': 0.15.0(typescript@6.0.3)
       discord-api-types: 0.38.55
       strip-ansi: 7.2.0
       typescript: 6.0.3
@@ -4130,6 +4237,8 @@ snapshots:
   entities@4.5.0: {}
 
   envapt@8.2.3: {}
+
+  envapt@9.2.0: {}
 
   environment@1.1.0: {}
 
@@ -5215,6 +5324,8 @@ snapshots:
   validate-npm-package-name@5.0.1: {}
 
   verkit@0.4.1: {}
+
+  verkit@0.5.0: {}
 
   vite-tsconfig-paths@6.1.1(typescript@6.0.3)(vite@8.3.0(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1)):
     dependencies:
