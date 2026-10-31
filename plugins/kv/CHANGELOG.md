@@ -1,5 +1,11 @@
 # seedcord-plugin-unstorage
 
+## 1.3.1
+
+### Patch Changes
+
+- [`8e29bda`](https://github.com/KTrain5169/seedcord-plugins/commit/8e29bda03c9c57207b7978fed21db41db97f3c6c) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Bup minimum peer unstorage version
+
 ## 1.3.0
 
 ### Minor Changes

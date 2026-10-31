@@ -1,5 +1,11 @@
 # seedcord-plugin-db0
 
+## 1.4.0
+
+### Minor Changes
+
+- [`e18243d`](https://github.com/KTrain5169/seedcord-plugins/commit/e18243d1b7bf576982a05f1c0b1e28390f8eb560) Thanks [@KTrain5169](https://github.com/KTrain5169)! - add entrypoints for drizzle and kysely (prisma coming soon?)
+
 ## 1.3.0
 
 ### Minor Changes
