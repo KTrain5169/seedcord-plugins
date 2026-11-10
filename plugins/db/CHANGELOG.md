@@ -1,5 +1,11 @@
 # seedcord-plugin-db0
 
+## 1.4.1
+
+### Patch Changes
+
+- [`cb5ad9b`](https://github.com/KTrain5169/seedcord-plugins/commit/cb5ad9b5a8dec4ed4ea2ac9cc52db39822c267d9) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Fix types for database dialects when using Drizzle
+
 ## 1.4.0
 
 ### Minor Changes
