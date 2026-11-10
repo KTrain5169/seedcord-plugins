@@ -2,7 +2,7 @@ import { CoreBase } from "@seedcord/core";
 import { Plugin } from "@seedcord/core/plugin";
 import { createDatabase, type Connector, type Database } from "db0";
 import { kysely } from "db0/integrations/kysely";
-import { KyselyConfig } from "kysely";
+import type { KyselyConfig } from "kysely";
 
 export class DB0Plugin<const TDatabaseTables extends object, const TConnector extends Connector> extends Plugin {
     private db?: Database<TConnector>
