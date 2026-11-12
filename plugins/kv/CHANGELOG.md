@@ -1,5 +1,11 @@
 # seedcord-plugin-unstorage
 
+## 1.3.2
+
+### Patch Changes
+
+- [`5736b2f`](https://github.com/KTrain5169/seedcord-plugins/commit/5736b2fb9a0ceef352d265cc4092f186a44b9291) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Bump compatible seedcord versions
+
 ## 1.3.1
 
 ### Patch Changes
