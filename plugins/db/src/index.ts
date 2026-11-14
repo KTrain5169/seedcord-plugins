@@ -1,6 +1,6 @@
 import { Plugin } from '@seedcord/core/plugin'
 import { CoreBase } from '@seedcord/core'
-import { Connector, createDatabase, Database } from 'db0'
+import { type Connector, createDatabase, type Database } from 'db0'
 
 export class DB0Plugin<const TConnector extends Connector> extends Plugin {
     private db?: Database<TConnector>

@@ -1,5 +1,35 @@
 # seedcord-plugin-db0
 
+## 1.4.2
+
+### Patch Changes
+
+- [`5736b2f`](https://github.com/KTrain5169/seedcord-plugins/commit/5736b2fb9a0ceef352d265cc4092f186a44b9291) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Bump compatible seedcord versions
+
+## 1.4.1
+
+### Patch Changes
+
+- [`cb5ad9b`](https://github.com/KTrain5169/seedcord-plugins/commit/cb5ad9b5a8dec4ed4ea2ac9cc52db39822c267d9) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Fix types for database dialects when using Drizzle
+
+## 1.4.0
+
+### Minor Changes
+
+- [`e18243d`](https://github.com/KTrain5169/seedcord-plugins/commit/e18243d1b7bf576982a05f1c0b1e28390f8eb560) Thanks [@KTrain5169](https://github.com/KTrain5169)! - add entrypoints for drizzle and kysely (prisma coming soon?)
+
+## 1.3.0
+
+### Minor Changes
+
+- [`fc83a65`](https://github.com/KTrain5169/seedcord-plugins/commit/fc83a65abf5f6de77198cc11f9a52c264b9cb0dd) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Bump supported seedcord versions
+
+### Patch Changes
+
+- [`a518045`](https://github.com/KTrain5169/seedcord-plugins/commit/a5180451b61451c2bd1d5143396728fb4001b414) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Make storage and db variables private
+
+- [`358a4e9`](https://github.com/KTrain5169/seedcord-plugins/commit/358a4e98fd5921c0b669e7821debeb483dfe807d) Thanks [@KTrain5169](https://github.com/KTrain5169)! - make db created in init() instead of constructor()
+
 ## 1.2.0
 
 ### Minor Changes

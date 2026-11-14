@@ -1,6 +1,6 @@
 {
   "name": "seedcord-plugin-db0",
-  "version": "1.2.0",
+  "version": "1.4.2",
   "description": "",
   "scripts": {
     "build": "tsdown",
@@ -19,19 +19,34 @@
   "license": "MIT",
   "type": "module",
   "peerDependencies": {
-    "@seedcord/core": "^0.9.0",
-    "db0": "^0.4.1"
+    "@seedcord/core": "^0.13.0",
+    "db0": "^0.4.1",
+    "drizzle-orm": "1.0.0-rc.5",
+    "kysely": "^0.29.7"
+  },
+  "peerDependenciesMeta": {
+    "drizzle-orm": {
+      "optional": true
+    },
+    "kysely": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "@seedcord/core": "^0.9.0",
+    "@prisma/client": "^7.10.1",
+    "@seedcord/core": "^0.13.0",
     "@types/node": "^26.6.2",
     "db0": "^0.4.1",
+    "drizzle-orm": "1.0.0-rc.5",
+    "kysely": "^0.29.7",
     "publint": "^0.3.24",
     "tsdown": "^0.23.0"
   },
   "exports": {
     ".": "./dist/index.mjs",
+    "./drizzle": "./dist/drizzle/index.mjs",
+    "./kysely": "./dist/kysely/index.mjs",
     "./package.json": "./package.json"
   }
 }

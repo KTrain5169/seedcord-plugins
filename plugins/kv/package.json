@@ -1,6 +1,6 @@
 {
   "name": "seedcord-plugin-unstorage",
-  "version": "1.2.0",
+  "version": "1.3.2",
   "description": "",
   "scripts": {
     "build": "tsdown",
@@ -20,20 +20,25 @@
   "type": "module",
   "devDependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "@seedcord/core": "^0.9.0",
+    "@seedcord/core": "^0.13.0",
     "@types/node": "^26.6.2",
     "publint": "^0.3.24",
     "tsdown": "^0.23.0"
   },
   "dependencies": {
-    "unstorage": "^1.17.5"
+    "unstorage": "^1.17.6"
   },
   "exports": {
     ".": "./dist/index.mjs",
     "./package.json": "./package.json"
   },
   "peerDependencies": {
-    "@seedcord/core": "^0.9.0",
+    "@seedcord/core": "^0.13.0",
     "unstorage": "^1.17.5"
+  },
+  "peerDependenciesMeta": {
+    "unstorage": {
+      "optional": true
+    }
   }
 }
