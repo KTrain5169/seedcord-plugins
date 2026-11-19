@@ -1,9 +1,5 @@
-export function fn() {
-  return "Hello, tsdown!";
-}
-
 import { NodeSDK, type NodeSDKConfiguration } from "@opentelemetry/sdk-node";
-import { ConsoleSpanExporter, SimpleSpanProcessor } from "@opentelemetry/sdk-trace-node";
+import { ConsoleSpanExporter, SimpleSpanProcessor } from "@opentelemetry/sdk-trace";
 import { PeriodicExportingMetricReader, ConsoleMetricExporter } from "@opentelemetry/sdk-metrics";
 import type { CoreBase } from "@seedcord/core";
 import { Plugin } from "@seedcord/core/plugin";
@@ -48,7 +44,7 @@ export class OpenTelemetry extends Plugin<{ runtime: "server"; transport: "any" 
         metricReader: new PeriodicExportingMetricReader({
           exporter: new ConsoleMetricExporter(),
         }),
-        spanProcessors: [new SimpleSpanProcessor(new ConsoleSpanExporter())],
+        spanProcessors: [new SimpleSpanProcessor({ exporter: new ConsoleSpanExporter() })],
         logRecordProcessors: [
           new SimpleLogRecordProcessor({ exporter: new ConsoleLogRecordExporter() }),
         ],
