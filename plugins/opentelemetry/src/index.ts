@@ -33,7 +33,7 @@ export class OpenTelemetry extends Plugin<{ runtime: "server"; transport: "any" 
     host: CoreBase,
     private readonly options?: OpenTelemetryOptions
   ) {
-    super(host);
+    super(host, { runtime: "server" });
   }
 
   async init(): Promise<void> {
