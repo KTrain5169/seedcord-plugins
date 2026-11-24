@@ -1,4 +1,6 @@
-import { BuilderComponent, InteractionMiddleware, Notice, RegisterInteractionMiddleware, ReplyResponse } from "@seedcord/gateway";
+import { BuilderComponent, InteractionMiddleware, Notice, RegisterInteractionMiddleware } from "@seedcord/gateway";
+
+import type { ReplyResponse } from "@seedcord/gateway";
 
 class LockClass extends BuilderComponent<'container'> {
     constructor() {
@@ -10,7 +12,6 @@ class LockClass extends BuilderComponent<'container'> {
         })
     }
 }
-
 
 class Locked extends Notice {
     constructor() {
@@ -26,11 +27,13 @@ class Locked extends Notice {
 
 @RegisterInteractionMiddleware()
 export class OwnerLock extends InteractionMiddleware {
-    override async execute(): Promise<void> {
+    // A middleware that doesn't throw lets the dispatch continue, so the
+    // owner case just returns. execute() has nothing to await, which is why
+    // it is sync and returns an already-resolved promise.
+    override execute(): Promise<void> {
         if (this.event.user.id !== "703180970567925792") {
             throw new Locked()
-        } else {
-            this.execute()
         }
+        return Promise.resolve()
     }
 }

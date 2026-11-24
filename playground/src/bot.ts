@@ -22,7 +22,8 @@ export const seedcord = new Seedcord({
             partials: [Partials.Message, Partials.Channel, Partials.Poll, Partials.PollAnswer]
         },
         interactions: {
-            path: resolve(import.meta.dirname, './handlers')
+            path: resolve(import.meta.dirname, './handlers'),
+            middlewares: resolve(import.meta.dirname, './handlers/middlewares')
         },
         commands: {
             path: resolve(import.meta.dirname, './commands')

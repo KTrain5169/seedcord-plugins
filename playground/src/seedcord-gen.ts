@@ -11,6 +11,7 @@ declare module '@seedcord/gateway' {
     }
     interface SlashRegistry {
         get_storage: { options: { key: { kind: 'string'; required: true } }; cache: 'cached' };
+        override_storage: { options: { key: { kind: 'string'; required: true }; value: { kind: 'string'; required: true } }; cache: 'cached' };
         ping: { options: { detailed: { kind: 'boolean'; required: false } }; cache: 'cached' };
         write_storage: { options: { key: { kind: 'string'; required: true }; value: { kind: 'string'; required: true } }; cache: 'cached' };
     }
