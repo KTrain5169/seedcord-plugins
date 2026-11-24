@@ -1,9 +1,9 @@
 import { ENVIRONMENT_KEYS, Envapter } from 'envapt'
 
 /**
- * One connector for each environment, development and production. Each slot
- * takes the value itself or a factory that builds it, so only the connector
- * the bot runs with is ever constructed.
+ * One value for each environment, development and production. Each slot
+ * takes the value itself or a factory that builds it, so only the value the
+ * bot runs with is ever constructed.
  */
 export type EnvironmentPair<T extends object> = {
     prod: T | (() => T)
@@ -24,7 +24,7 @@ function resolve<T extends object>(value: T | (() => T)): T {
  * detection decides, but only when one of the mode variables was actually
  * passed, reading the same shell and .env values envapt does. With none of
  * them set, production is the default, so a Node bot started with no
- * environment at all runs the prod connector instead of silently falling into
+ * environment at all runs the prod value instead of silently falling into
  * development.
  */
 function detectMode(): string {

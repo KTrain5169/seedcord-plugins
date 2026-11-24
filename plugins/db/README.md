@@ -77,7 +77,8 @@ A built Node bot loads this package straight from `node_modules`, where no Vite 
 ## Peer dependencies
 
 - `@seedcord/core` — `^0.14.0`
-- `envapt` — `^9.2.0`, already a peer of seedcord itself, and the runtime fallback for a built Node bot
 - `db0` — `^0.4.1`
 - `drizzle-orm` — `1.0.0-rc.5`, optional, for the drizzle entrypoint
 - `kysely` — `^0.29.7`, optional, for the kysely entrypoint
+
+`envapt` is a peer of [`@ktrain5369/seedcord-plugin-utils`](https://github.com/KTrain5169/seedcord-plugins), the shared package this plugin resolves its options with, and through it of any bot that passes a pair.

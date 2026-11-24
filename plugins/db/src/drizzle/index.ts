@@ -5,7 +5,7 @@ import type { DrizzleSQLiteDatabase, DB0DrizzleSQLiteConfig } from "db0/integrat
 import type { DrizzlePgConfig, DrizzlePgDatabase } from "db0/integrations/drizzle/postgres";
 import type { DrizzleMySqlConfig, DrizzleMySqlDatabase } from "db0/integrations/drizzle/mysql";
 import type { AnyRelations, EmptyRelations } from "drizzle-orm/relations";
-import { byEnvironment, type EnvironmentPair } from "../environment";
+import { byEnvironment, type EnvironmentPair } from "@ktrain5369/seedcord-plugin-utils";
 
 interface DialectMappings<TRelations extends AnyRelations> {
     mysql: {

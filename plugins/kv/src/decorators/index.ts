@@ -1,5 +1,5 @@
 import { createStorage, type Driver, type Storage, type StorageValue } from 'unstorage'
-import { byEnvironment, type EnvironmentPair } from '../environment'
+import { byEnvironment, type EnvironmentPair } from '@ktrain5369/seedcord-plugin-utils'
 
 /**
  * The storages the OverrideUnstorage decorator built, so the plugin's dispose()

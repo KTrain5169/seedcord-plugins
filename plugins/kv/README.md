@@ -105,5 +105,6 @@ Things worth knowing:
 ## Peer dependencies
 
 - `@seedcord/core` — `^0.14.0`
-- `envapt` — `^9.2.0`, already a peer of seedcord itself, and the runtime fallback for a built Node bot
 - `unstorage` — `^1.17.5`, optional, needed once your code imports drivers
+
+`envapt` is a peer of [`@ktrain5369/seedcord-plugin-utils`](https://github.com/KTrain5169/seedcord-plugins), the shared package this plugin resolves its options with, and through it of any bot that passes a pair.

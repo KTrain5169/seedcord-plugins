@@ -1,0 +1,36 @@
+{
+  "name": "@ktrain5369/seedcord-plugin-utils",
+  "version": "0.0.0",
+  "description": "Shared helpers for the seedcord plugins",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KTrain5169/seedcord-plugins",
+    "directory": "packages/utils"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "KTrain5369",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "envapt": "^9.2.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.5",
+    "@types/node": "^26.6.2",
+    "envapt": "^9.2.0",
+    "publint": "^0.3.24",
+    "tsdown": "^0.23.0",
+    "typescript": "~6.0"
+  }
+}

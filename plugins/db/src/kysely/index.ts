@@ -3,7 +3,7 @@ import { Plugin } from "@seedcord/core/plugin";
 import { createDatabase, type Connector, type Database } from "db0";
 import { kysely } from "db0/integrations/kysely";
 import type { KyselyConfig } from "kysely";
-import { byEnvironment, type EnvironmentPair } from "../environment";
+import { byEnvironment, type EnvironmentPair } from "@ktrain5369/seedcord-plugin-utils";
 
 export class DB0Plugin<const TDatabaseTables extends object, const TConnector extends Connector> extends Plugin {
     private db?: Database<TConnector>

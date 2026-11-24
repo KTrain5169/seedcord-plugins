@@ -2,7 +2,7 @@ import { createStorage, Driver, Storage, StorageValue } from 'unstorage'
 import { CoreBase } from '@seedcord/core'
 import { Plugin } from '@seedcord/core/plugin'
 import { disposeOverriddenStorages } from './decorators/index'
-import { byEnvironment, type EnvironmentPair } from './environment'
+import { byEnvironment, type EnvironmentPair } from '@ktrain5369/seedcord-plugin-utils'
 
 export class UnstorageClass<const TValueType extends StorageValue> extends Plugin {
     private storage?: Storage<TValueType>
