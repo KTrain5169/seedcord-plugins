@@ -1,6 +1,6 @@
 {
   "name": "@ktrain5369/seedcord-plugin-utils",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Shared helpers for the seedcord plugins",
   "scripts": {
     "build": "tsdown",

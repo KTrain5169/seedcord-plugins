@@ -1,5 +1,20 @@
 # seedcord-plugin-db0
 
+## 1.5.0
+
+### Minor Changes
+
+- Bump minimum supported seedcord core to 0.14.0
+
+- [#9](https://github.com/KTrain5169/seedcord-plugins/pull/9) [`d61f8e6`](https://github.com/KTrain5169/seedcord-plugins/commit/d61f8e66c630191b71078e4cf24a3782337496ba) Thanks [@KTrain5169](https://github.com/KTrain5169)! - Accept one driver or connector for each environment.
+  
+  Pass a single value as before to use it in every environment, or pass `{ dev, prod }` — both slots required, each taking the value itself or a factory like `prod: () => redisDriver(...)`, so only the driver the bot runs with is ever constructed. The plugin picks `dev` while the session runs in development and `prod` in production and staging, from the mode Vite fills into `import.meta.env.MODE`: `development` under seedcord dev, `production` baked into a build. Code Vite never transformed, like a package loaded straight from node_modules on Node, reads the mode from envapt's runtime detection instead — defaulting to `prod` when no mode variable was passed at all — so `envapt` is a peer dependency again. If you passed `{ prod }` without a `dev` slot on an earlier db0 version, pass the connector by itself instead — the object form now requires both.
+
+### Patch Changes
+
+- Updated dependencies [[`92fdbd4`](https://github.com/KTrain5169/seedcord-plugins/commit/92fdbd470d4dd25b86a53abe2751bfb3da727f08)]:
+  - @ktrain5369/seedcord-plugin-utils@0.1.0
+
 ## 1.4.2
 
 ### Patch Changes
